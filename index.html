@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Gọi thư viện jQuery từ CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Gọi thư viện Kendo UI từ CDN -->
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.default-v2.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2021.1.330/js/kendo.all.min.js"></script>
+    <!--Tạo style cho button-->
+    <style>
+        .custom-button {
+            background-color: #87f08a; /* Green background */
+            color: rgb(102, 150, 136); /* White text */
+            border: none; /* Remove border */
+            padding: 10px 20px; /* Add some padding */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Display inline-block */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Add some margin */
+            cursor: pointer; /* Add a pointer cursor on hover */
+            border-radius: 8px; /* Rounded corners */
+        }
+        .custom-button:hover {
+            background-color: #cff245; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1> Trang chủ của Button 2024 </h1>
+    <!-- Thêm nút vào HTML -->
+    <button id="btn" class="custom-button">Click vào tui để tới NAL</button>
+    <script>
+        $(document).ready(function() {
+            $("#btn").kendoButton();
+            $("#btn").click(function(){
+                //Thêm URL điều hướng tới 
+                window.location.href="https://nals.vn/en/";
+            });
+        });
+    </script>
+</body>
+</html>
